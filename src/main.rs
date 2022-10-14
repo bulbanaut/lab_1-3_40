@@ -4,7 +4,7 @@ use std::io::stdin;
 TODO: добавить комментарии
 */
 
-fn main() {
+fn main() { //вычисляет високосный ли год деля его на 4 и проверяя на остаток
     println!("Введите год");
     let year: i32 = read_var();
     if year % 4 == 0 {
@@ -15,7 +15,7 @@ fn main() {
     pause();
 }
 
-fn read_var() -> i32 {
+fn read_var() -> i32 {      //считывает ввод
     loop {
         let mut x =String::new();
         stdin()
